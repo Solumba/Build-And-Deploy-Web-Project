@@ -168,6 +168,10 @@ nav {
     font-size: 32px;
 }
 
+.profile img {
+    width: 100%;
+}
+
 .story, .my-work{
     display: flex;
     justify-content: space-between;
