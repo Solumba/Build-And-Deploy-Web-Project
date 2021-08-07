@@ -43,12 +43,26 @@ nav {
     grid-template-columns: 5% 1fr 1fr 1fr 5%;
 }
 
+.chef, .hairstyle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    opacity: 0;
+}
+
+
 .hero {
     overflow: hidden;
     display: flex;
     height: 500px;
     align-self: center;
     justify-self: center;
+}
+
+.hero a {
+    display: flex;
 }
 
 /* Hero animations*/
@@ -264,4 +278,43 @@ nav {
     .details h2 {
         font-size: 28px;
     }
+}
+
+.nav-open {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 40vh;
+    width: 100%;
+    z-index: 1;
+    color: black;
+    background: white;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-100%);
+}
+
+.contact {
+    grid-column: 2/3;
+}
+
+.nav-open h3 {
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+.nav-open p {
+    font-size: 18px;
+}
+
+.social-links img {
+    padding: 0 20px;
+}
+
+.logo, .menu {
+    z-index: 2;
+    cursor: pointer;
 }
